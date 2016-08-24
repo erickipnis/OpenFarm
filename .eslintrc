@@ -1,0 +1,16 @@
+{
+  "extends": "airbnb/base",
+  "ecmaFeatures": { "destructuring": true },
+  "rules": {
+    "brace-style": [2, "stroustrup", { "allowSingleLine": true }],
+    "no-param-reassign": 1,
+    "no-unused-vars": [2, {"args": "after-used", "argsIgnorePattern": "^__"}],
+    "no-shadow": 1,
+    "no-console": "error",
+    "default-case": 1,
+    "new-cap": 0,
+    "func-names": 0,
+    "no-else-return": 0,
+    "padded-blocks": 0,
+  }
+}

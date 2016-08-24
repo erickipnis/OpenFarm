@@ -2,9 +2,11 @@
   "name": "openfarm-server",
   "version": "1.0.0",
   "description": "The server for OpenFarm, a 2D farming simulator.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "./node_modules/eslint/bin/eslint.js --max-warnings 0 **/*.js",
+    "start": "node index.js",
+    "test": "mocha test/"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
     "bcryptjs": "^2.3.0",
     "bluebird": "^3.4.1",
     "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
     "cors": "^2.7.1",
     "es6-error": "^3.0.1",
     "express": "^4.14.0",
@@ -31,8 +34,10 @@
     "immutable": "^3.8.1",
     "jsonwebtoken": "^7.1.9",
     "mongoose": "^4.5.9",
+    "morgan": "^1.7.0",
     "radicchio": "^1.1.2",
     "ramda": "^0.22.1",
+    "rc": "^1.1.6",
     "socket.io": "^1.4.8",
     "socketio-jwt": "^4.5.0",
     "winston": "^2.2.0"
@@ -44,6 +49,7 @@
     "chai-as-promised": "^5.3.0",
     "eslint": "^3.3.1",
     "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-import": "^1.13.0",
     "mocha": "^3.0.2",
     "mocha-mongodb": "^0.1.2",
     "mocha-mongoose": "^1.2.0",
